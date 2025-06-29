@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSpectra 2025 Events</title>
+    <style>
+        /* Include all base styles from main page */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #0a192f;
+            color: #64ffda;
+        }
+
+        header {
+            background: #020c1b;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Events Page Specific Styles */
+        .events-hero {
+            padding: 150px 20px 50px;
+            text-align: center;
+            background: linear-gradient(45deg, #0a192f, #020c1b);
+        }
+
+        .events-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        .event-category {
+            margin-bottom: 80px;
+        }
+
+        .event-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .event-card {
+            background: #112240;
+            border-radius: 10px;
+            padding: 25px;
+            transition: transform 0.3s;
+            border: 1px solid #233554;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+        }
+
+        .event-card h3 {
+            color: #64ffda;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .event-details {
+            color: #8892b0;
+            line-height: 1.6;
+        }
+
+        .prize-pool {
+            color: #64ffda;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        .schedule-table th,
+        .schedule-table td {
+            padding: 15px;
+            border: 1px solid #233554;
+            text-align: left;
+        }
+
+        .event-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .event-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">CyberSpectra</div>
+            <nav>
+                <!-- Updated About link -->
+                <a href="about.html"></a> 
+                <a href="cyberspectra.html">Home</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </nav>
+    </header>
+
+    <section class="events-hero">
+        <h1>CyberSpectra 2025 Events</h1>
+        <p class="date">50+ Technical Events | ₹10L+ Prize Pool</p>
+    </section>
+
+    <div class="events-container">
+        <!-- Competitions Section -->
+        <section class="event-category">
+            <h2>Competitions</h2>
+            <div class="event-grid">
+                <div class="event-card">
+                    <a href="https://example.com/robowars" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                        <div class="event-icon">🤖</div>
+                        <h3>Robowars</h3>
+                        <div class="event-details">
+                            <p>Design and battle your combat robots</p>
+                            <p>Team Size: 3-5 members</p>
+                            <div class="prize-pool">Prize: ₹5,00,000</div>
+                        </div>
+                    </a>
+                </div>
+            
+                <div class="event-card">
+                    <a href="https://example.com/code-crusade" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                        <div class="event-icon">💻</div>
+                        <h3>Code Crusade</h3>
+                        <div class="event-details">
+                            <p>24-hour competitive programming marathon</p>
+                            <p>Individual participation</p>
+                            <div class="prize-pool">Prize: ₹2,50,000</div>
+                        </div>
+                    </a>
+                </div>
+            
+                <div class="event-card">
+                    <a href="https://example.com/esports" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                        <div class="event-icon">🎮</div>
+                        <h3>eSports Championship</h3>
+                        <div class="event-details">
+                            <p>Valorant & BGMI tournaments</p>
+                            <p>Team Size: 5 members</p>
+                            <div class="prize-pool">Prize: ₹7,00,000</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Workshops Section -->
+        <section class="event-category">
+            <h2>Workshops</h2>
+            <div class="event-grid">
+                <div class="event-card">
+                    <a href="https://example.com/advanced-robotics" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                        <div class="event-icon">🤖</div>
+                        <h3>Advanced Robotics</h3>
+                        <div class="event-details">
+                            <p>3-day hands-on workshop with IoT integration</p>
+                            <p>Duration: 12 hours</p>
+                            <div class="prize-pool">Fee: ₹1,999</div>
+                        </div>
+                    </a>
+                </div>
+            
+                <div class="event-card">
+                    <a href="https://example.com/ethical-hacking" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                        <div class="event-icon">🔐</div>
+                        <h3>Ethical Hacking</h3>
+                        <div class="event-details">
+                            <p>Learn penetration testing techniques</p>
+                            <p>Duration: 8 hours</p>
+                            <div class="prize-pool">Fee: ₹1,499</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Schedule Table -->
+        <section class="event-category">
+            <h2>Event Schedule</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Event</th>
+                        <th>Venue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00 AM</td>
+                        <td>Opening Ceremony</td>
+                        <td>Main Arena</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 AM</td>
+                        <td>Robowars Qualifiers</td>
+                        <td>Tech Pavilion</td>
+                    </tr>
+                    <tr>
+                        <td>02:00 PM</td>
+                        <td>Hackathon Begins</td>
+                        <td>Code Lab</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CyberSpectra. All rights reserved.</p>
+        <div class="social-links">
+            <!-- Add social media links -->
+        </div>
+    </footer>
+</body>
+</html>
